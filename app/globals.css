@@ -2,32 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .text-11 {
+    font-size: 11px;
+    line-height: 12px;
+  }
+
+  .bg-black-beauty {
+    --tw-bg-opacity: 1;
+    background-color: rgb(34 34 39 / var(--tw-bg-opacity));
+  }
+
+  .bg-bunker {
+    --tw-bg-opacity: 1;
+    background-color: rgb(41 41 44 / var(--tw-bg-opacity));
+  }
+
+  .bg-bunker-lite {
+    --tw-bg-opacity: 1;
+    background-color: rgb(33 33 37 / var(--tw-bg-opacity));
+  }
+
+  .bg-custom-yellow {
+    --tw-bg-opacity: 1;
+    background-color: rgb(229 255 178 / var(--tw-bg-opacity));
+  }
+
+  .bg-custom-yellow-hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(229 247 212 / var(--tw-bg-opacity));
+  }
+
+  .border-gray-1 {
+    --tw-bg-opacity: 1;
+    border-color: rgb(76 76 80 / var(--tw-border-opacity));
+  }
+
+  .py-p7 {
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+
+  .text-white-40\% {
+    color: hsla(0, 0%, 100%, 0.4);
+  }
+
+  .text-white-70\% {
+    color: hsla(0, 0%, 100%, 0.7);
   }
 }
